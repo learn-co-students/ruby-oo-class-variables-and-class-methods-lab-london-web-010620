@@ -46,11 +46,11 @@ end
   def self.artist_count 
     @artist_count = {} 
 
-    @@artists.map do |genre| 
-        if @artist_count[genre]
-            @artist_count[genre] += 1
+    @@artists.map do |artist| 
+        if @artist_count[artist]
+            @artist_count[artist] += 1
         else 
-            @artist_count[genre] = 1 
+            @artist_count[artist] = 1 
         end 
     end 
     @artist_count
