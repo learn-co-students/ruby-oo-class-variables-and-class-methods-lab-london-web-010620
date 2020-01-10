@@ -27,6 +27,8 @@ class Song
   
   def self.genres 
     @@genres.uniq
+    
+
 
   end 
 
@@ -42,7 +44,7 @@ class Song
     end 
     @genre_count
 end
-    
+    #alt: @@genres.group_by {|genres| genres}.map{|key, value| [key, value.size]}.to_h
   def self.artist_count 
     @artist_count = {} 
 
